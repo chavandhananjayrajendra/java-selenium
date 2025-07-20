@@ -54,5 +54,10 @@ public class Main {
         // - Object behavior is determined by the actual instance (Salesperson),
         //   not the reference type (Employee).
         // - This is the foundation of **runtime polymorphism**.
+
+
+        //This is downcasting: you're telling the compiler,
+        //            Salesperson adiCast = (Salesperson) adi;
+        //"Hey, I know adi is actually a Salesperson, so let me treat it as such."
     }
 }
