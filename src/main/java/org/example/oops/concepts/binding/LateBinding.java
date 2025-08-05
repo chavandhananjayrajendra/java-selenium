@@ -2,13 +2,13 @@ package org.example.oops.concepts.binding;
 
 
 class Animal {
-    void makeSound() {
+    void makeSound1() {
         System.out.println("Animal sound");
     }
 }
 
 class Dog extends Animal {
-    @Override
+
     void makeSound() {
         System.out.println("Dog barks");
     }
@@ -17,13 +17,14 @@ class Dog extends Animal {
 public class LateBinding {
     public static void main(String[] args) {
         Animal animal = new Dog();  // Upcasting
+        animal.makeSound1();
 
 //to show late binding for parent method
      if(animal instanceof Dog){
          Dog d = (Dog) animal;
          d.makeSound();
+
      }
-        animal.makeSound();         // Late binding at runtime
     }
 }
 
