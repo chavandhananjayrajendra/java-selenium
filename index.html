@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>XPath Axes Practice</title>
+  <style>
+    body { font-family: Arial, sans-serif; padding: 20px; }
+    .box { margin-bottom: 20px; padding: 10px; border: 1px solid #ccc; }
+  </style>
+</head>
+<body>
+
+  <h1>XPath Axes Practice Form</h1>
+
+  <div class="box" id="personalInfo">
+    <h2>Personal Info</h2>
+    <label>First Name: <input type="text" id="firstName" /></label><br /><br />
+    <label>Last Name: <input type="text" id="lastName" /></label><br /><br />
+    <label>Email: <input type="email" id="email" /></label>
+  </div>
+
+  <div class="box" id="genderSection">
+    <h2>Gender</h2>
+    <input type="radio" id="male" name="gender" value="male" />
+    <label for="male">Male</label>
+    <input type="radio" id="female" name="gender" value="female" />
+    <label for="female">Female</label>
+  </div>
+
+  <div class="box" id="contactSection">
+    <h2>Contact</h2>
+    <label>Phone: <input type="text" id="phone" /></label><br /><br />
+    <label>Address:</label><br />
+    <textarea id="address"></textarea>
+  </div>
+
+  <div class="box" id="preferences">
+    <h2>Preferences</h2>
+    <input type="checkbox" id="subscribe" />
+    <label for="subscribe">Subscribe to newsletter</label><br />
+    <input type="checkbox" id="terms" />
+    <label for="terms">Accept Terms and Conditions</label>
+  </div>
+
+  <div class="box" id="buttons">
+    <button id="submitBtn">Submit</button>
+    <button id="resetBtn">Reset</button>
+  </div>
+
+</body>
+</html>
