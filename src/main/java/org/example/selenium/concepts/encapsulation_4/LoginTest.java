@@ -9,7 +9,7 @@ public class LoginTest {
 
     public static void main(String[] args) {
         // 1️⃣ Set the ChromeDriver path
-        System.setProperty("webdriver.chrome.driver", "C:\\Users\\chava\\Downloads\\chromedriver-win64 (1)\\chromedriver-win64\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "D:\bakup//chromedriver-win64 latest//chromedriver-win64//chromedriver.exe");
 
         // 2️⃣ Launch the browser
         WebDriver driver = new ChromeDriver();

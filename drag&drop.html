@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Drag and Drop Demo</title>
+    <style>
+        .container {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 50px;
+        }
+        .box {
+            width: 150px;
+            height: 150px;
+            border: 2px solid #333;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            background-color: #f1f1f1;
+        }
+        #dropBox {
+            background-color: #d3ffd3;
+        }
+    </style>
+</head>
+<body>
+<h2>Drag and Drop Example</h2>
+<div class="container">
+    <div id="dragBox" class="box" draggable="true">Drag Me</div>
+    <div id="dropBox" class="box">Drop Here</div>
+</div>
+
+<script>
+    const dragBox = document.getElementById("dragBox");
+    const dropBox = document.getElementById("dropBox");
+
+    dragBox.addEventListener("dragstart", function (event) {
+        event.dataTransfer.setData("text", event.target.id);
+    });
+
+    dropBox.addEventListener("dragover", function (event) {
+        event.preventDefault();
+    });
+
+    dropBox.addEventListener("drop", function (event) {
+        event.preventDefault();
+        const data = event.dataTransfer.getData("text");
+        const draggedElement = document.getElementById(data);
+        dropBox.appendChild(draggedElement);
+        dropBox.style.backgroundColor = "#90ee90";
+        dropBox.innerText = "Dropped!";
+    });
+</script>
+</body>
+</html>

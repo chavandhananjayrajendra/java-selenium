@@ -22,9 +22,9 @@ Hidden Dropdown
 
 public class HiddenDropDown {
     public static void main(String[] args) throws InterruptedException {
-        System.setProperty("webdriver.chrome.driver", "C:\\Users\\chava\\Downloads\\chromedriver-win64 (1)\\chromedriver-win64\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "D://bakup//chromedriver-win64 latest//chromedriver-win64//chromedriver.exe");
         WebDriver driver = new ChromeDriver();
-        driver.get("C:\\Users\\chava\\Downloads\\JavaSelenium\\hiddendropdown.html"); // update your path
+        driver.get("C:\\Users//chava\\Downloads\\JavaSelenium\\hiddendropdown.html"); // update your path
 
         driver.findElement(By.id("showMenuBtn")).click();
         Thread.sleep(1000); // Wait for it to become visible

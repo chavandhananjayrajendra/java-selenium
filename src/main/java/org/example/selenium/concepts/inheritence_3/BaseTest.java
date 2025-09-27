@@ -11,7 +11,7 @@ public class BaseTest {
     WebDriver driver;
 
     public void launchBrowser(String url) {
-        System.setProperty("webdriver.chrome.driver", "C:\\Users\\chava\\Downloads\\chromedriver-win64 (1)\\chromedriver-win64\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "D://bakup//chromedriver-win64 latest//chromedriver-win64//chromedriver.exe");
         driver = new ChromeDriver();
         driver.get(url);
     }

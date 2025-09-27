@@ -11,7 +11,7 @@ public class WrapperClassSelenium {
 
     public static void main(String[] args) {
         // Set the path to your local ChromeDriver
-        System.setProperty("webdriver.chrome.driver", "C:\\Users\\chava\\Downloads\\chromedriver-win64 (1)\\chromedriver-win64\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "D:\bakup//chromedriver-win64 latest//chromedriver-win64//chromedriver.exe");
 
         WebDriver driver = new ChromeDriver();
         driver.get("https://www.saucedemo.com");

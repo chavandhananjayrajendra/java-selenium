@@ -14,7 +14,7 @@ public class BaseTest {
 
     // ✅ Method to launch browser and open site
     public void openBrowser() {
-        System.setProperty("webdriver.chrome.driver", "C:\\Users\\chava\\Downloads\\chromedriver-win64 (1)\\chromedriver-win64\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "D:\bakup//chromedriver-win64 latest//chromedriver-win64//chromedriver.exe");
         driver = new ChromeDriver();
         driver.get("https://google.com");
     }

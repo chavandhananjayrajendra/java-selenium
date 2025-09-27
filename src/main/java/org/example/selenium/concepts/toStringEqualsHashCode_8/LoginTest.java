@@ -22,7 +22,7 @@ public class LoginTest {
         System.out.println("Hash Code: " + test1.hashCode());
 
         // Selenium example usage
-        System.setProperty("webdriver.chrome.driver", "C:\\Users\\chava\\Downloads\\chromedriver-win64 (1)\\chromedriver-win64\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "D:\bakup//chromedriver-win64 latest//chromedriver-win64//chromedriver.exe");
         WebDriver driver = new ChromeDriver();
         driver.get(test1.toString()); // just for demo; normally you’d use test1.getUrl()
         driver.findElement(By.id("user-name")).sendKeys("standard_user");

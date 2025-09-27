@@ -31,13 +31,13 @@ Multi-Select Dropdown Notes:
 
 public class MultiSelectDropDown {
     public static void main(String[] args) throws InterruptedException {
-        System.setProperty("webdriver.chrome.driver", "C:\\Users\\chava\\Downloads\\chromedriver-win64 (1)\\chromedriver-win64\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "D:\bakup//chromedriver-win64 latest//chromedriver-win64//chromedriver.exe");
 
         WebDriver driver = new ChromeDriver();
         driver.manage().window().maximize();
 
         // Load local HTML file (change path as per your machine)
-        driver.get("C:\\Users\\chava\\Downloads\\JavaSelenium\\multiselectdropdown.html");
+        driver.get("D:\\bakup\\JavaSelenium\\multiselectdropdown.html");
 
         // Locate the multi-select dropdown
         WebElement multiSelect = driver.findElement(By.id("languages"));

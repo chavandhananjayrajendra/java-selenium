@@ -22,13 +22,13 @@ public class BootStrapDropdown {
     public static void main(String[] args) throws InterruptedException {
 
         // Set up ChromeDriver
-        System.setProperty("webdriver.chrome.driver", "C:\\Users\\chava\\Downloads\\chromedriver-win64 (1)\\chromedriver-win64\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "D:\bakup//chromedriver-win64 latest//chromedriver-win64//chromedriver.exe");
         WebDriver driver = new ChromeDriver();
 
         driver.manage().window().maximize();
 
         // Load your HTML page locally
-        driver.get("C:\\Users\\chava\\Downloads\\JavaSelenium\\bootstrapdropdown.html");
+        driver.get("D:\\bakup\\JavaSelenium\\bootstrapdropdown.html");
 
         // Click the dropdown button
         WebElement dropdownBtn = driver.findElement(By.cssSelector(".dropdown-toggle"));
