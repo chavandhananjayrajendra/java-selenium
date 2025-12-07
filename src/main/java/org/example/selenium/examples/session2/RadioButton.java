@@ -13,6 +13,10 @@ public class RadioButton    {
         driver.manage().window().maximize();
 
 
+
+
+
+
         WebElement malebtn =  driver.findElement(By.xpath("//input[@id='male']"));
 
         WebElement femalebtn =  driver.findElement(By.xpath("//input[@id='female']"));

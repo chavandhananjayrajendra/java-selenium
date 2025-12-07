@@ -5,6 +5,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
+
+import java.time.Duration;
 //getText()--->capture inner text of the element
 
 //only inner text are captured by the getText() method that's why we are not able to run & verify the if-else condition
@@ -33,7 +35,10 @@ public class DoubleClick {
         WebElement box2=driver.findElement(By.xpath("//input[@id='field2']"));
         WebElement button=driver.findElement(By.xpath("//button [normalize-space()='Copy Text']"));
         box1.clear();
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(100));
+
         box1.sendKeys("CHAVAN");
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(100));
         Actions act = new Actions(driver);
         act.doubleClick(button).perform();
 

@@ -15,7 +15,7 @@ public class TabsAndWindows {
 
 
         driver.switchTo().newWindow(WindowType.WINDOW);  //opens new tab in new window
-        driver.get("https://meet.google.com/qid-hkjn-eck?pli=1");
+        driver.get("https://meet n nn n .google.com/qid-hkjn-eck?pli=1");
 
 
     }
