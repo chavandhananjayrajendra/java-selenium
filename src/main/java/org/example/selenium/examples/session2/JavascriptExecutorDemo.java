@@ -20,7 +20,22 @@ public class JavascriptExecutorDemo {
 
 
         //no casting object of Chromedriver class can store the variable of  
-        JavascriptExecutor js =  driver;
+//        JavascriptExecutor js =  driver;
+
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+
+        //passing the text into textbox->alternative for sendKeys() method
+        js.executeScript("arguments[0].setAttribute('value','John')",inputBox);
+        WebElement radiobutton = driver.findElement(By.xpath("//input[@id='male']"));
+
+
+        //clicking on element-> alternate to click
+        js.executeScript("arguments[0].click()",radiobutton);
+
+
+
+
+
 
 
     }
