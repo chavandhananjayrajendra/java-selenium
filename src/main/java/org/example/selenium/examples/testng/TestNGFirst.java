@@ -1,4 +1,4 @@
-package org.example.selenium.examples;
+package org.example.selenium.examples.testng;
 
 import org.testng.annotations.Test;
 
