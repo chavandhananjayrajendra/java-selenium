@@ -86,8 +86,7 @@ public class November02 {
         //HashSet stores only unique elements.
         //
         //Think about an automation framework where you want to store unique test environment names.
-
-
+//Does not preserve order.for preserving order use linkedhashset
         HashSet<String> environments = new HashSet<>();
 
         environments.add("QA");
