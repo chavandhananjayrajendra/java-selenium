@@ -14,7 +14,9 @@ public class OpenInNewTab {
     public static void main(String[] args) {
         WebDriver driver = new ChromeDriver();
         driver.get("https://www.flipkart.com/");
+
         driver.manage().window().maximize();
+        driver.findElement(By.xpath("//span[@role='button' and text()='X']")).click();
         WebElement mobileTablets = driver.findElement(By.xpath("//span[contains(text(),\"Mobiles & Tablets\")]"));
         Actions act = new Actions(driver);
 
