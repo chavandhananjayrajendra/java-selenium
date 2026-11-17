@@ -7,7 +7,6 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
-import java.util.concurrent.TimeUnit;
 
 
 
@@ -17,7 +16,7 @@ public class DatePickerExample {
 
         // Setup driver
         WebDriver driver = new ChromeDriver();
-        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+//        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         driver.manage().window().maximize();
 
         driver.get("https://jqueryui.com/datepicker/");

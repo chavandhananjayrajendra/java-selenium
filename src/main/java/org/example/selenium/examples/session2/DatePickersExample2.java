@@ -3,9 +3,9 @@ package org.example.selenium.examples.session2;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
-import java.util.concurrent.TimeUnit;
 
 // 1. Switch to iframe if datepicker is inside one
 // 2. Open the calendar by clicking the input box
@@ -18,7 +18,7 @@ public class DatePickersExample2 {
     public static void main(String[] args) {
 
         WebDriver driver = new ChromeDriver();
-        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+//        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         driver.manage().window().maximize();
 
         driver.get("https://jqueryui.com/datepicker/");

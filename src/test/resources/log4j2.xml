@@ -1,36 +1,39 @@
-
 <?xml version="1.0" encoding="UTF-8"?>
 <Configuration status="WARN">
 
-    <Properties>
-        <Property name="LOG_PATTERN">
-            %d{HH:mm:ss} %-5level [%t] %c{1} - %msg%n
-        </Property>
-    </Properties>
-
     <Appenders>
 
+        <!-- Appender 1: Displays logs in IntelliJ console -->
         <Console name="Console" target="SYSTEM_OUT">
-            <PatternLayout pattern="${LOG_PATTERN}"/>
+            <PatternLayout
+                    pattern="%d{HH:mm:ss} %-5level %c{1} - %msg%n"/>
         </Console>
 
+        <!-- Appender 2: Writes logs into physical file -->
         <File name="FileLogger"
               fileName="logs/automation.log"
               append="true">
-            <PatternLayout pattern="${LOG_PATTERN}"/>
+
+            <PatternLayout
+                    pattern="%d{HH:mm:ss} %-5level %c{1} - %msg%n"/>
+
         </File>
 
     </Appenders>
 
     <Loggers>
 
+        <!-- Framework logger -->
         <Logger name="com.automation"
-                level="DEBUG"
+                level="TRACE"
                 additivity="false">
+
             <AppenderRef ref="Console"/>
             <AppenderRef ref="FileLogger"/>
+
         </Logger>
 
+        <!-- Root logger -->
         <Root level="INFO">
             <AppenderRef ref="Console"/>
         </Root>

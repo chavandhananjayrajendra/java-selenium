@@ -4,7 +4,6 @@ package com.automation.tests;
 import com.automation.base.BaseTest;
 import com.automation.pages.HomePage;
 import com.automation.pages.ProductsPage;
-
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
